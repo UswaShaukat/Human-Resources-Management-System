@@ -1,0 +1,90 @@
+/* Placeholder styles for input elements */
+.form-control::placeholder {
+  color: #006600;
+}
+
+/* Placeholder styles for select elements */
+.form-control option[disabled] {
+  color: #006600;
+}
+
+/* Styles for dropdowns */
+.form-control {
+  border-color: #006600;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 414px) {
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .dashboard-section {
+    padding: 20px;
+  }
+
+  .form-control,
+  .btn,
+  .dropdown-item {
+    font-size: 14px;
+  }
+
+  .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.big-bold-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button,
+.btn {
+  background-color: #006600 !important;
+  border-color: #006600 !important;
+  color: white !important;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #004d00 !important;
+  border-color: #004d00 !important;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  flex-grow: 1;
+}
+
+.fetch-button {
+  height: 50px;
+  font-size: 16px;
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6c757d;
+}
+
+.select-placeholder {
+  color: #006600;
+}

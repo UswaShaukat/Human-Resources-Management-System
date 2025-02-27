@@ -1,0 +1,53 @@
+/* Table header color */
+table thead th {
+  background-color: #006600 !important;
+  color: white !important;
+  padding: 10px !important;
+}
+
+/* Ensure table data is displayed in a single line */
+table tbody td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px;
+}
+
+/* Add borders to the table for a cleaner look */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ced4da;
+}
+
+/* Align the text to the left and adjust padding */
+table th, table td {
+  text-align: left;
+  padding: 8px;
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 414px) {
+  table thead th, table tbody td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  /* Add horizontal scroll to the table */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

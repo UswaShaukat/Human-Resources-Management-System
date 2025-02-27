@@ -1,0 +1,145 @@
+/* Placeholder styles for input elements */
+.form-control::placeholder {
+  color: #006600;
+}
+
+/* Placeholder styles for select elements */
+.form-control option[disabled] {
+  color: #006600;
+}
+
+/* Styles for dropdowns */
+.form-control {
+  border-color: #006600;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 414px) {
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .dashboard-section {
+    padding: 20px;
+  }
+
+  .form-control,
+  .btn,
+  .dropdown-item {
+    font-size: 14px;
+  }
+
+  .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.big-bold-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button,
+.btn {
+  background-color: #006600 !important;
+  border-color: #006600 !important;
+  color: white !important;
+  margin-right: 10px; /* Adjust gap between buttons */
+}
+
+button:last-child,
+.btn:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+button:hover,
+.btn:hover {
+  background-color: #004d00 !important;
+  border-color: #004d00 !important;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  flex-grow: 1;
+}
+
+.fetch-button {
+  height: 50px;
+  font-size: 16px;
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6c757d;
+}
+
+.select-placeholder {
+  color: #006600;
+}
+.dropdown-icon{
+color: #006600;
+}/* CSS for Employee Management Component */
+
+/* Placeholder color for Form.Control */
+.form-control::placeholder {
+  color: #006600;
+}
+
+/* Selected option color in dropdown */
+.form-control {
+  color: #006600;
+}
+
+/* Option text color inside the dropdown */
+.form-control option {
+  color: #006600;
+}
+/* Table header color */
+table thead th {
+  background-color: #006600 !important;
+  color: white !important;
+  padding: 10px !important;
+  white-space: nowrap; /* Ensure header text is in a single line */
+  overflow: hidden; /* Prevent overflow */
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+table tbody td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px;
+}
+.document-upload-container {
+  border: 2px dashed #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.document-preview {
+  margin-top: 1rem;
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

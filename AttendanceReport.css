@@ -1,0 +1,84 @@
+/* Adjust layout for buttons and search box */
+.attendance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Search group spacing */
+.attendance-search-group {
+    margin-bottom: 20px; /* Adjust space below search box */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Specific hover effect for the buttons */
+button.attendance-btn:hover, 
+button.fetch-btn:hover,
+button.refresh-btn:hover,
+button.download-btn:hover {
+    background-color: white !important;
+    color: #006600 !important;
+    border: 2px solid #006600 !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Popup shadow */
+    transform: translateY(-2px);
+}
+
+
+
+/* Wrapper for dropdown with icon */
+.dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Dropdown input styling */
+.small-input {
+    width: 100%;
+    padding: 10px 35px 10px 10px; /* Adjusted for icon spacing */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none; /* Remove default dropdown arrow */
+}
+
+/* Dropdown icon styling */
+.dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent icon from interfering with clicks */
+    font-size: 1.2em; /* Adjust icon size */
+    color: #006600; /* Icon color */
+}
+/* Container for buttons */
+.button-group {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 40px; /* Adjust space below textboxes */
+}
+
+/* General button styling */
+.attendance-btn {
+    display: flex;
+    justify-content: center; /* Center text within the button */
+    align-items: center; /* Align text vertically */
+    gap: 5px;
+    background-color: #006600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Set consistent size for all buttons */
+    width: 100px; /* Adjust as needed for desired button width */
+    height: 40px; /* Adjust height for smaller buttons */
+    font-size: 0.9em; /* Slightly smaller text for compact look */
+}
